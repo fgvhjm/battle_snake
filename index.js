@@ -58,13 +58,13 @@ function move(gameState) {
   if ((myNeck.x < myHead.x)||myHead.x==0) {        // Neck is left of head, don't move left
     isMoveSafe.left = false;
 
-  } else if ((myNeck.x > myHead.x)||myHead.x==boardWidth-1) { // Neck is right of head, don't move right
+  }  if ((myNeck.x > myHead.x)||myHead.x==boardWidth-1) { // Neck is right of head, don't move right
     isMoveSafe.right = false;
 
-  } else if ((myNeck.y < myHead.y)||myHead.y==0) { // Neck is below head, don't move down
+  }  if ((myNeck.y < myHead.y)||myHead.y==0) { // Neck is below head, don't move down
     isMoveSafe.down = false;
 
-  } else if ((myNeck.y > myHead.y)||myHead.y==boardHeight-1) { // Neck is above head, don't move up
+  }  if ((myNeck.y > myHead.y)||myHead.y==boardHeight-1) { // Neck is above head, don't move up
     isMoveSafe.up = false;
   }
 
@@ -72,18 +72,18 @@ function move(gameState) {
   // boardWidth = gameState.board.width;
   // boardHeight = gameState.board.height;
 
-  if(myHead.x==boardWidth-1){
-    isMoveSafe.right=false;
-  }
-  if(myHead.x==0){
-    isMoveSafe.left=false;
-  }
-  if(myHead.y==boardHeight-1){
-    isMoveSafe.up=false;
-  }
-  if(myHead.y==0){
-    isMoveSafe.down=false;
-  }
+  // if(myHead.x==boardWidth-1){
+  //   isMoveSafe.right=false;
+  // }
+  // if(myHead.x==0){
+  //   isMoveSafe.left=false;
+  // }
+  // if(myHead.y==boardHeight-1){
+  //   isMoveSafe.up=false;
+  // }
+  // if(myHead.y==0){
+  //   isMoveSafe.down=false;
+  // }
   
   
 
