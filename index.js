@@ -22,7 +22,7 @@ function info() {
     apiversion: "1",
     author: "",       // TODO: Your Battlesnake Username
     color: "blue", // TODO: Choose color
-    head: "default",  // TODO: Choose head
+    head: "bonhomme",  // TODO: Choose head
     tail: "default",  // TODO: Choose tail
   };
 }
