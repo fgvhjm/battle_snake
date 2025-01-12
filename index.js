@@ -97,16 +97,16 @@ function move(gameState) {
     let d=myHead.y-1;
     
     for(let i=1;i<myBody.length;i++){
-     if(r==myBody[i]){
+     if(r==myBody[i].x){
       isMoveSafe.right=false;
      }
-     if(l==myBody[i]){
+     if(l==myBody[i].x){
       isMoveSafe.left=false;
      }
-     if(u==myBody[i]){
+     if(u==myBody[i].y){
       isMoveSafe.up=false;
      }
-     if(d==myBody[i]){
+     if(d==myBody[i].y){
       isMoveSafe.down=false;
      }
     }
