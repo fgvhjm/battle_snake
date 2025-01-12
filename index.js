@@ -34,7 +34,7 @@ function start(gameState) {
 
 // end is called when your Battlesnake finishes a game
 function end(gameState) {
-  console.log("GAME OVER\n");
+  console.log(gameState);
 }
 
 // move is called on every turn and returns your next move
