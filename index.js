@@ -72,18 +72,18 @@ function move(gameState) {
   // boardWidth = gameState.board.width;
   // boardHeight = gameState.board.height;
 
-  // if(myHead.x==boardWidth-1){
-  //   isMoveSafe.right=false;
-  // }
-  // if(myHead.x==0){
-  //   isMoveSafe.left=false;
-  // }
-  // if(myHead.y==boardHeight-1){
-  //   isMoveSafe.up=false;
-  // }
-  // if(myHead.y==0){
-  //   isMoveSafe.down=false;
-  // }
+  if(myHead.x==boardWidth-1){
+    isMoveSafe.right=false;
+  }
+  if(myHead.x==0){
+    isMoveSafe.left=false;
+  }
+  if(myHead.y==boardHeight-1){
+    isMoveSafe.up=false;
+  }
+  if(myHead.y==0){
+    isMoveSafe.down=false;
+  }
   
   
 
