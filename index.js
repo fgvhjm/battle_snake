@@ -34,14 +34,14 @@ function start(gameState) {
 
 // end is called when your Battlesnake finishes a game
 function end(gameState) {
-  console.log(gameState);
+ 
 }
 
 // move is called on every turn and returns your next move
 // Valid moves are "up", "down", "left", or "right"
 // See https://docs.battlesnake.com/api/example-move for available data
 function move(gameState) {
-
+  console.log(gameState);
   let isMoveSafe = {
     up: true,
     down: true,
@@ -50,8 +50,8 @@ function move(gameState) {
   };
 
   // We've included code to prevent your Battlesnake from moving backwards
-  const myHead = gameState.you.body[0];
-  const myNeck = gameState.you.body[1];
+  let myHead = gameState.you.body[0];
+  let myNeck = gameState.you.body[1];
 
   if (myNeck.x < myHead.x) {        // Neck is left of head, don't move left
     isMoveSafe.left = false;
@@ -69,6 +69,22 @@ function move(gameState) {
   // TODO: Step 1 - Prevent your Battlesnake from moving out of bounds
   // boardWidth = gameState.board.width;
   // boardHeight = gameState.board.height;
+  let boardWidth=gameState.board.width;
+  let boardHeight=gameState.board.height;
+  if(myHead.x==boardWidth-1){
+    isMoveSafe.left=false;
+  }
+  if(myHead.x==0){
+    isMoveSafe.right=false;
+  }
+  if(myHead.y==boardHeight-1){
+    isMoveSafe.down=false;
+  }
+  if(myHead.y==0){
+    isMoveSafe.up=false;
+  }
+  
+  
 
   // TODO: Step 2 - Prevent your Battlesnake from colliding with itself
   // myBody = gameState.you.body;
