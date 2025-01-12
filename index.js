@@ -72,16 +72,16 @@ function move(gameState) {
   let boardWidth=gameState.board.width;
   let boardHeight=gameState.board.height;
   if(myHead.x==boardWidth-1){
-    isMoveSafe.left=false;
-  }
-  if(myHead.x==0){
     isMoveSafe.right=false;
   }
+  if(myHead.x==0){
+    isMoveSafe.left=false;
+  }
   if(myHead.y==boardHeight-1){
-    isMoveSafe.down=false;
+    isMoveSafe.up=false;
   }
   if(myHead.y==0){
-    isMoveSafe.up=false;
+    isMoveSafe.down=false;
   }
   
   
