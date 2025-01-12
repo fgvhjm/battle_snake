@@ -41,7 +41,7 @@ function end(gameState) {
 // Valid moves are "up", "down", "left", or "right"
 // See https://docs.battlesnake.com/api/example-move for available data
 function move(gameState) {
-  // console.log(gameState);
+ 
   let isMoveSafe = {
     up: true,
     down: true,
@@ -110,7 +110,7 @@ function move(gameState) {
       isMoveSafe.down=false;
      }
     }
-  
+    console.log(isMoveSafe);
 
   // TODO: Step 3 - Prevent your Battlesnake from colliding with other Battlesnakes
   // opponents = gameState.board.snakes;
